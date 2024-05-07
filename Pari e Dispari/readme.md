@@ -17,7 +17,6 @@ Dichiariamo chi ha vinto.
         - Creo una funzione per generare un numero random (valore del computer) <!-- numeroComputer -->
         function getRndInteger(min, max) {
         return Math.floor(Math.random() * (max - min + 1) ) + min;
-        return;
         }
 
         - creo una funzione per la somma di numeroUtente + numeroComputer <!-- somma -->
