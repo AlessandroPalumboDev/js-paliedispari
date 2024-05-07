@@ -16,11 +16,15 @@ if (sceltaUtente === "pari" || sceltaUtente === "dispari"){
     // Creo una funzione per generare un numero random (valore del computer)
     function getRndInteger(min, max) {
         return Math.floor(Math.random() * (max - min + 1) ) + min;
-        }
+    }
         
-        // dichiaro una variabile con il valore della funzione
-        const numeroComputer = Number(getRndInteger(1, 5));
-        console.log(numeroComputer);
+    // dichiaro una variabile con il valore della funzione
+    const numeroComputer = getRndInteger(1, 5);
+
+    // calcolo la somma dichiarandone una variabile
+    const somma = Number(numeroComputer) + Number(numeroUtente);
+    console.log (somma);
+
 
     }else{
     alert('Puoi scegliere solo numeri interi da 1 a 5 compresi');
