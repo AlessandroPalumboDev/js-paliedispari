@@ -19,17 +19,14 @@ Dichiariamo chi ha vinto.
         return Math.floor(Math.random() * (max - min + 1) ) + min;
         }
 
-        - creo una funzione per la somma di numeroUtente + numeroComputer <!-- somma -->
-        function somma(){
-            numeroUtente + numeroComputer = somma;
-            return;
-        }
+        - creo una variabile per la somma di numeroUtente + numeroComputer <!-- somma -->
+        
 
         - creo una funzione che ci dice se il valore somma è pari o dispari <!-- risultatoPariDispari -->
         function risultatoPariDispari(){
             se numero utente % 2 = 0{
                 return pari};
-            return dispari
+            oppure{return dispari}
         }
 
         - dichiaro chi ha vinto

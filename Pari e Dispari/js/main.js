@@ -25,6 +25,16 @@ if (sceltaUtente === "pari" || sceltaUtente === "dispari"){
     const somma = Number(numeroComputer) + Number(numeroUtente);
     console.log (somma);
 
+    // creo una funzione che ci dice se il valore somma è pari o dispari
+    function result(){
+        if(Number(somma) % 2 == 0){
+            return ('pari')
+        }else{
+            return ('dispari');
+        };
+    };
+    const risultato = result();
+    
 
     }else{
     alert('Puoi scegliere solo numeri interi da 1 a 5 compresi');
