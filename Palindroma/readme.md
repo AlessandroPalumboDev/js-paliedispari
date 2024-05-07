@@ -2,7 +2,7 @@ Palindroma
 Chiedere all’utente di inserire una parola
 Creare una funzione per capire se la parola inserita è palindroma   
 
-- creazione variabile con prompt per inserimento della parola (.trim() per rimuovere gli spazi e .toLowerCase()per trasformare tutto in minuscolo)
+- creazione variabile con prompt per inserimento della parola (.split(' ').join('') per rimuovere gli spazi e .toLowerCase()per trasformare tutto in minuscolo)
 
 - creazione funzione per ribaltare una stringa
     function ribaltata(variabilePrompt) {
