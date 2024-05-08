@@ -3,6 +3,9 @@
 // definisco una variabile con il valore di un prompt che chiede pari o dispari 
 const sceltaUtente = prompt('pari o dispari?').toLowerCase();
 
+// definisco varibili del numero minimo e il numero massimo per futuro cambio più semplice del calcolo del numero random
+const minimo = 1;
+const massimo = 5;
 
 // controllo che l' utente scriva solo pari o dispari
 if (sceltaUtente === "pari" || sceltaUtente === "dispari") {
@@ -11,7 +14,7 @@ if (sceltaUtente === "pari" || sceltaUtente === "dispari") {
     const numeroUtente = Number(prompt('Scegli un numero da 1 a 5'));
 
     // controllo che utente può inserire solo numeri interi da 1 e 5
-    if (!isNaN(numeroUtente) && Number.isInteger(numeroUtente) && numeroUtente >= 1 && numeroUtente <= 5) {
+    if (!isNaN(numeroUtente) && Number.isInteger(numeroUtente) && numeroUtente >= minimo && numeroUtente <= massimo) {
 
         // Creo una funzione per generare un numero random (valore del computer)
         function getRndInteger(min, max) {
@@ -19,7 +22,7 @@ if (sceltaUtente === "pari" || sceltaUtente === "dispari") {
         }
 
         // dichiaro una variabile con il valore della funzione
-        const numeroComputer = getRndInteger(1, 5);
+        const numeroComputer = getRndInteger(minimo, massimo);
 
         // calcolo la somma dichiarandone una variabile
         const somma = Number(numeroComputer) + Number(numeroUtente);
