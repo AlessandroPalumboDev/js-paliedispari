@@ -15,11 +15,11 @@ function operazioniRibaltamento(input) {
 const ribaltato = operazioniRibaltamento(input);
 
 // confronto l'input con il risultato ribaltato in una funzione che modifica la variabile esterna
-function pali(){
-    if(input === ribaltato){
+function pali() {
+    if (input === ribaltato) {
         return ('il testo è palindromo');
     }
-        return ('il testo non è palindromo');
+    return ('il testo non è palindromo');
 };
 
 // dichiaro una variabile della funzione invocandola
