@@ -26,25 +26,29 @@ if (sceltaUtente === "pari" || sceltaUtente === "dispari") {
         console.log(somma);
 
         // creo una funzione che ci dice se il valore somma è pari o dispari
-        function result() {
+        function pariDispari() {
             if (Number(somma) % 2 == 0) {
                 return ('pari')
             } else {
                 return ('dispari');
             };
         };
-        const risultato = result();
+        const risultato = pariDispari();
 
-        // dichiaro vincitore e stampo
-        if (sceltaUtente === risultato) {
-            console.log('Bravo! Hai vinto!')
-        } else {
-            console.log('Peccato! Hai perso!')
+        // dichiaro vincitore con una funzione
+        function result() {
+            if (sceltaUtente === risultato) {
+                return ('Bravo! Hai vinto!')
+            } 
+            return('Peccato! Hai perso!');
         };
 
+        // invoco la funzione salvandola in una variabile
+        const vittoria = result()
+
         // stampo verdetto
-        console.log(`Hai scelto il numero ${numeroUtente}, io ho scelto ${numeroComputer}, la somma è ${somma} quindi il risultato è ${risultato} e la tua scelta è stata ${sceltaUtente}`);
-        alert(`Hai scelto il numero ${numeroUtente}, io ho scelto ${numeroComputer}, la somma è ${somma} quindi il risultato è ${risultato} e la tua scelta è stata ${sceltaUtente}`);
+        console.log(`${vittoria} Hai scelto il numero ${numeroUtente}, io ho scelto ${numeroComputer}, la somma è ${somma} quindi il risultato è ${risultato} e la tua scelta è stata ${sceltaUtente}`);
+        alert(`${vittoria} Hai scelto il numero ${numeroUtente}, io ho scelto ${numeroComputer}, la somma è ${somma} quindi il risultato è ${risultato} e la tua scelta è stata ${sceltaUtente}`);
 
     } else {
         alert('Puoi scegliere solo numeri interi da 1 a 5 compresi');
